@@ -1,0 +1,20 @@
+{
+    "name": "network-spy/domainregistrar",
+    "type": "vcs",
+    "description": "Register domain at services by using their API",
+    "keywords": ["register", "domain", "2domains", "godaddy"],
+    "autoload": {
+        "psr-4": { "DomainRegistrar\\": "src/DomainRegistrar/" }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/regru/php-whois",
+            "name":"phois/whois"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "phois/whois": "dev-master"
+    }
+}
